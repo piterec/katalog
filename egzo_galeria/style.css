@@ -1,0 +1,28 @@
+body{
+   
+    background-color:whitesmoke;
+    color:rgb(98, 97, 97);
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    min-width: 100%;
+    height:auto;
+}
+header{
+    width:100%;
+    min-width:100%;
+    height:auto;
+    padding:5%;
+    margin:0
+}
+main{
+    height:200px;
+    background-color:rgb(123, 114, 114);
+    margin:0;
+}
+.object {
+    padding: 5px;
+    width: 20%;
+    height: 30%;
+    
+}
