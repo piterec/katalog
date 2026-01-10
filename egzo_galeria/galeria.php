@@ -17,7 +17,7 @@
         <h1>An interactive gallery of exoskeletons and prostheses</h1>
         
             <input type="image" src="darkmode.png" id="darkmode"> </input>
-        
+            
     </header>
 
     <main>
@@ -42,7 +42,7 @@
 
 
     <footer>
-        Contact: Piotr Marszałek (208161) and Jakub Meronk (205257)<br>+48 123 456 789
+        Contact: Piotr Marszałek (208161) and Jakub Meronk (205257)<br>+48 48 66 11 513
     </footer>
 
     <script src="script.js"></script>
