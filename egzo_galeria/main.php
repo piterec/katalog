@@ -14,15 +14,15 @@
 
 <body>
     <header>
-        An interactive gallery of exoskeletons and prostheses
+        <h1>An interactive gallery of exoskeletons and prostheses</h1>
         
             <input type="image" src="darkmode.png" id="darkmode"> </input>
         
     </header>
 
     <main>
-        <ol id="polecamy">
-<h3>Polecamy</h3>
+        <ol id="lista">
+
 <?php
 	                // Skrypt #1
 	                $sql = "SELECT id, name, image, manufacturer, y_manufacture FROM gallery WHERE pro_exo=1;";
