@@ -1,7 +1,3 @@
-<?php
-	    $conn = new mysqli("localhost","root","","exo_prostheses");
-	
-?>
 
 <!DOCTYPE HTML>
 
@@ -15,29 +11,17 @@
 <body>
     <header>
         <h1>An interactive gallery of exoskeletons and prostheses</h1>
-        
+            
             <input type="image" src="darkmode.png" id="darkmode"> </input>
-        
+        <ol id="odnosniki">
+            <li href="main.php">home</li>
+            <li href="gallery.php">gallery</li>
+            <li href="survey.php">survey</li>
+        </ol>
     </header>
 
     <main>
-        <ol id="lista">
-
-<?php
-	                // Skrypt #1
-	                $sql = "SELECT id, name, image, manufacturer, y_manufacture FROM gallery WHERE pro_exo=1;";
-                $result = $conn->query($sql);
-	    
-	                while($row = $result -> fetch_array()) {
-	                    echo "<li class='object'>";
-                        echo "<img src='$row[2]' alt='proteza/egzoszkielet'>";
-                        echo "<h4> $row[1]</h4>";
-                        echo "<p>$row[3]</p>";
-                        echo "<p>production year: $row[4]</p>";
-	                    echo "</li>";
-	                }
-	            ?>
-</ol>
+      
     </main>
 
 
@@ -47,7 +31,4 @@
 
     <script src="script.js"></script>
 </body>
-<?php
-    $conn -> close();
-	?>
-</html> 
+
