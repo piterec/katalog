@@ -25,12 +25,12 @@
         <p>If you wish to join our newsletter, please enter your email address below.</p>
 
         <form id="surveyForm" method="POST">
-                <fieldset>
-                <legend>please enter your email address here</legend>
-                <textarea name="comment" rows="4"></textarea>
+            <fieldset>
+                <label for="email">email<label>
+                <input type="text" id="email" name="email">
             </fieldset>
 
-            <button type="submit">Submit</button>
+            <input type="button" id="validation" value="give us your data" >
         </form>
 
     </section>
@@ -41,6 +41,6 @@
         Contact: Piotr Marszałek (208161) and Jakub Meronk (205257)<br>+48 123 456 789
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-darkmode=document.getElementById("darkmode")
+const darkmode=document.getElementById("darkmode")
 darkmode.addEventListener("click", toggle)
 let dark= false
 function toggle(){
@@ -16,33 +16,26 @@ function toggle(){
 }
 
 
+const form = document.getElementById("search");
+const lista = document.getElementById("lista");
 
+let timeout = null;
 
+form.addEventListener("input", () => {
+    
+    clearTimeout(timeout);
 
-const form = document.getElementById("surveyForm");
-const message = document.getElementById("surveyMessage");
+    timeout = setTimeout(() => {
+        const formData = new FormData(form);
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const data = {
-        comment: form.comment.value,
-        date: new Date().toISOString()
-    }
-
-
-    let surveys = JSON.parse(localStorage.getItem("surveys")) || [];
-
-
-    surveys.push(data);
-
-
-    localStorage.setItem("surveys", JSON.stringify(surveys));
-
-
-    message.textContent = "Thank you! Your answers have been saved.";
-    message.style.color = "green";
-
-
-    form.reset();
+        fetch("logic.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.text())
+        .then(html => {
+            lista.innerHTML = html;
+        });
+    }, 150);
 });
+
