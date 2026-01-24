@@ -3,6 +3,7 @@
 
 <html lang="pl">
 <head>
+    
     <title>Interactive gallery of exoskeletons</title>
     <link rel="stylesheet" href="style.css">
 
@@ -26,11 +27,11 @@
 
         <form id="surveyForm" method="POST">
             <fieldset>
-                <label for="email">email<label>
+                <label for="email">email</label>
                 <input type="text" id="email" name="email">
             </fieldset>
 
-            <input type="button" id="validation" value="give us your data" >
+            <input type="button" id="validation"  value="give us your data" >
         </form>
 
     </section>
@@ -41,6 +42,6 @@
         Contact: Piotr Marszałek (208161) and Jakub Meronk (205257)<br>+48 123 456 789
     </footer>
 
-    <script src="script1.js"></script>
+   
 </body>
-
+ <script src="script1.js"></script>

@@ -9,10 +9,17 @@
 </head>
 
 <body>
+
+<script>
+         fetch("data.json")
+         .then(response => response.json()) 
+         .then(dane => {document.getElementById("wynik").textContent = dane.tekst;});
+</script>
     <header>
         
             
             <input type="image" src="darkmode.png" id="darkmode"> </input>
+            <h1 id="wynik" class="welcome"></h1>
             <h1>An interactive gallery of exoskeletons and prostheses</h1>
         <ol id="odnosniki">
             <li><a href="main.php">home</a></li>

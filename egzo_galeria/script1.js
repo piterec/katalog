@@ -1,16 +1,20 @@
 const email=document.getElementById("email");
-const submit=document.getElementById("validation");
+const but=document.getElementById("validation");
 
-
+but.addEventListener("click", validation);   
 function validation(){
-
-   let wartosc=document.getElementById('surveyForm').email.value
-    console.log(wartosc)
+    
+    let wartosc=email.value
+    let regex = /[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9]+/i;
+    if(regex.test(wartosc)==true){
+        alert("you have signed up for the newsletter!")
+    }
+    else{
+        alert("please input a valid email format (name@domain.someting)")
+    }
+    
 }
-submit.addEventListener("click", validation());
-
-
-const darkmode=document.getElementById("darkmode")
+arkmode=document.getElementById("darkmode")
 darkmode.addEventListener("click", toggle)
 let dark= false
 function toggle(){

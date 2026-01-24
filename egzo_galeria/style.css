@@ -72,3 +72,9 @@ ol {
     margin-left: -5px;
 
 }
+#wynik {
+  position: relative;
+  top: -1px;
+  left: 0px;
+  height: 75px;
+}

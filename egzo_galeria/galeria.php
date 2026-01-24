@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <fieldset style="border-color:blue">
+        <fieldset >
         <form method="POST" id="search" >
             
             <label for="pro">prostheses</label><br>
